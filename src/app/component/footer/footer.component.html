@@ -1,0 +1,34 @@
+<div class="fondo">
+    <div class="calculadora">
+        <div class="display">
+            <input type="text" placeholder="0" disabled [value]="input">
+            <input type="text" placeholder="0" disabled [value]="result">
+        </div>
+        <div class="botones">
+            <input type="button" (click)="allClear()" value="AC">
+            <input type="button" (click)="clear()" value="DEL">
+            <input type="button" (click)="pressOperator('/')" value="/">
+            <input type="button" (click)="pressOperator('*')" value="x">
+
+            <input type="button" (click)="pressNum('7')" value="7">
+            <input type="button" (click)="pressNum('8')" value="8">
+            <input type="button" (click)="pressNum('9')" value="9">
+            <input type="button" (click)="pressOperator('-')" value="-">
+
+            <input type="button" (click)="pressNum('6')" value="6">
+            <input type="button" (click)="pressNum('5')" value="5">
+            <input type="button" (click)="pressNum('4')" value="4">
+            <input type="button" value="+">
+
+            <input type="button" (click)="pressNum('1')" value="1">
+            <input type="button" (click)="pressNum('2')" value="2">
+            <input type="button" (click)="pressNum('3')" value="3">
+            <input type="button" (click)="getAnswer()" value="=">
+
+            <input type="button" (click)="pressNum('0')" value="0">
+            <input type="button" (click)="pressNum('.')" value=".">
+
+
+        </div>
+    </div>
+</div>

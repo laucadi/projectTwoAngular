@@ -1,0 +1,87 @@
+<div class="fondo">
+    <div class="row fondo-imagen">
+        <div class="col-6 col-md-6 titulo-principal">
+            <div class="titulo-1">
+                <h1>AYUDANOS A REPARTIR ESPERANZA</h1>
+            </div>
+        </div>
+        <div class="col-6 col-md-6 cuadro-formulario">
+            <div class="row cuadro-centrado">
+                <div class="mensaje">
+                    <h2>HAZ UN REGALO HOY</h2>
+                </div>
+                <div class="ventana">
+                    <p><span>Noticia:</span> Despues de realizar tu donacion, revisa tu correo para que veas el
+                        proceso.....</p>
+                    <div class="icono-danger"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                </div>
+
+                <div class="formulario">
+
+                    <form (ngSubmit)="onSubmit()" class="formulario-1" [formGroup]="contactForm">
+                        <h2>Informacion personal</h2>
+                        <div class="row datos-personales">
+                            <div class="form-group col-12 col-md-6">
+                                <label for="">Nombres</label>
+                                <input type="text" class="form-control" name="nombres" required
+                                    formControlName="nombres">
+                                <div *ngIf="contactForm.get('nombres')?.touched && contactForm.get('nombres')?.errors?.['required']"
+                                    class="alert alert-danger">Este campor es obligatorio.</div>
+                                <div *ngIf="contactForm.get('nombres')?.touched && contactForm.get('nombres')?.errors?.['minlength']"
+                                    class="alert alert-danger">Este campo debe tener mas de
+                                    {{ contactForm.get('nombres')?.errors?.['minlength']?.requiredLength}} caracteres.
+                                </div>
+                            </div>
+                            <div class="form-group col-12 col-md-6">
+                                <label for="">apellidos</label>
+                                <input type="text" class="form-control" name="apellidos" required
+                                    formControlName="apellidos">
+                                <div *ngIf="contactForm.get('apellidos')?.touched && contactForm.get('apellidos')?.errors?.['required']"
+                                    class="alert alert-danger">Este campor es obligatorio</div>
+                                <div *ngIf="contactForm.get('apellidos')?.touched && contactForm.get('apellidos')?.errors?.['minlength']"
+                                    class="alert alert-danger">Este campo debe tener mas de
+                                    {{ contactForm.get('apellidos')?.errors?.['minlength']?.requiredLength}} caracteres.
+                                </div>
+                            </div>
+                            <div class="form-group col-12 col-md-12">
+                                <label for="">Ciudad</label>
+                                <input type="text" class="form-control" name="ciudad" required formControlName="ciudad">
+                                <div *ngIf="contactForm.get('ciudad')?.touched && contactForm.get('ciudad')?.errors?.['required']"
+                                    class="alert alert-danger">Este campor es obligatorio</div>
+                                <div *ngIf="contactForm.get('ciudad')?.touched && contactForm.get('ciudad')?.errors?.['minlength']"
+                                    class="alert alert-danger">Este campo debe tener mas de
+                                    {{ contactForm.get('ciudad')?.errors?.['minlength']?.requiredLength}} caracteres.
+                                </div>
+                            </div>
+                            <div class="form-group col-12 col-md-12">
+                                <label for="">Digite el valor a donar</label>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">$</span>
+                                    </div>
+                                    <input type="text" class="form-control" name="valor_donar" required
+                                        formControlName="valor_donar">
+                                    <div *ngIf="contactForm.get('valor_donar')?.touched && contactForm.get('valor_donar')?.errors?.['required']"
+                                        class="alert alert-danger">Este campor es obligatorio</div>
+                                    <div *ngIf="contactForm.get('valor_donar')?.touched && contactForm.get('valor_donar')?.errors?.['min']"
+                                        class="alert alert-danger">Este campo debe tener mas de
+                                        {{ contactForm.get('valor_donar')?.errors?.['min']?.required}} caracteres.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn my-4" [disabled]="contactForm.invalid"
+                            (click)="enviar()">Donar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Nombres
+Apellidos
+Edad
+Ciudad
+Cantidad de dinero a donar -->

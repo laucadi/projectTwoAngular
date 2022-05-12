@@ -1,0 +1,69 @@
+.calculadora {
+    margin: 0;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-image: url("../../../assets/img/bg-pattern.png");
+
+}
+
+.titulo {
+    padding: 80px;
+}
+
+.titulo h1 {
+
+    font-size: 4.5rem;
+    color: #ffff;
+    font-family: 'Roboto Slab', serif;
+    /*font-family: 'Titillium Web', sans-serif;*/
+}
+
+.numeros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.form-control {
+    min-width: 100px;
+    max-width: 400px;
+    width: 100%;
+    margin: 10px;
+
+}
+
+
+mat-form-field {
+    width: 400px;
+
+
+
+}
+
+mat-label {
+    color: #090920a1;
+    font-family: 'Titillium Web', sans-serif;
+
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+
+}
+
+.operacion {
+    border: none;
+    background-color: transparent;
+}
+
+.resultado-text h1 {
+    color: white;
+    font-size: 2em;
+}

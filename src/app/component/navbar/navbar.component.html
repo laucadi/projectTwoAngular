@@ -1,0 +1,19 @@
+<p>
+    <mat-toolbar>
+        <mat-toolbar-row>
+            <span routerLink=""><i class="fa-solid fa-rocket fa-flip" style="--fa-animation-duration: 5s;"></i></span>
+            <!--<span> <i class="fa-solid fa-spinner fa-spin-pulse fa-spin-reverse"></i></span>-->
+            <span routerLink="">Laura Caicedo</span>
+            <span class="example-spacer"></span>
+            <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon"
+                [matMenuTriggerFor]="menu">
+                <mat-icon>menu</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item routerLink="calculadora">Calculadora</button>
+                <button mat-menu-item routerLink="formulario">formulario</button>
+                <button mat-menu-item routerLink="calculadora-2">Calculadora-2</button>
+            </mat-menu>
+        </mat-toolbar-row>
+    </mat-toolbar>
+</p>

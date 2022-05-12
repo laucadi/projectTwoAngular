@@ -1,0 +1,99 @@
+.fondo {
+    height: 100vh;
+    background-image: url("https://images.pexels.com/photos/655625/pexels-photo-655625.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+.fondo-imagen {
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    background-color: #4e54c8e0;
+}
+
+.titulo-principal {
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.titulo-principal h1 {
+    font-size: 4em;
+    line-height: 1em;
+    font-family: 'Patrick Hand', cursive;
+    border-left: 5px solid #fe696a;
+    padding-left: 5px;
+    color: white;
+}
+
+.cuadro-formulario {
+    background-color: white;
+    width: 35%;
+    border-radius: 15px;
+    margin: 0 auto;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.mensaje h2 {
+    font-size: 2.5em;
+    padding: 50px 0px 10px 10px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.ventana {
+    background-color: rgba(128, 128, 128, 0.338);
+    width: 90%;
+    margin: 0 auto;
+    border-left: 5px solid #fe696a;
+    position: relative;
+}
+
+.ventana p span {
+    font-size: 1.2em;
+}
+
+.ventana p {
+    padding: 10px;
+    font-family: 'Patrick Hand', cursive;
+    letter-spacing: 1px;
+}
+
+
+.icono-danger i {
+    background-color: #fe696a;
+    border-radius: 100%;
+    padding: 5px;
+    position: absolute;
+    top: 20px;
+    left: -17px;
+    font-size: 18px;
+
+}
+
+.formulario-1 h2 {
+    font-family: 'Roboto Slab', serif;
+    padding: 22px 0 0 15px;
+    font-weight: bolder;
+}
+
+.datos-personales {
+    padding: 0 10px;
+}
+
+.form-group label {
+    font-family: 'Patrick Hand', cursive;
+    padding: 10px 0;
+}
+
+button {
+    background-color: #fe696a;
+    font-family: 'Patrick Hand', cursive;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-left: 10px;
+
+}

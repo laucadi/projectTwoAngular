@@ -1,0 +1,64 @@
+.fondo {
+    /*background: linear-gradient(to right, #4b6cb7, #182848);*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/*
+.calculadora {
+    /*border: 2px solid #053069;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 6px 6px 12px 5px rgba(0, 0, 0, 0.35);
+
+}*/
+
+.display input {
+    width: 100%;
+    color: white
+}
+
+.botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    margin-top: 30px;
+}
+
+input[type="button"][value="0"] {
+    grid-column: span 2;
+}
+
+input[type="button"][value="="] {
+    grid-row: span 2;
+}
+
+.display input {
+    padding: 30px 0 10px 0;
+    background-color: #fcfcfc21;
+    border: none;
+    border-radius: 5px;
+}
+
+.display input::placeholder {
+    padding-left: 10px;
+    font-size: 2em;
+    color: aliceblue;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.botones input {
+    font-size: 1.5em;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 6px 6px 12px 5px rgba(0, 0, 0, 0.35);
+    background-color: #053069;
+    font-family: 'Titillium Web', sans-serif;
+    color: #b7bacd;
+
+
+}

@@ -1,0 +1,34 @@
+<div class="calculadora">
+    <div class="patrones">
+        <div class="titulo col-12">
+            <h1>Calculadora</h1>
+        </div>
+        <div class="row">
+            <div class="col-12 numeros">
+                <input type="number" class="form-control" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-sm" [(ngModel)]="num1">
+            </div>
+            <div class="col-12 numeros">
+                <input type="number" class="form-control" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-sm" [(ngModel)]="num2">
+            </div>
+            <div class="resultado col-12">
+                <mat-form-field appearance="fill">
+                    <mat-label>Seleccione operacion</mat-label>
+                    <mat-select>
+                        <mat-option value="two"><button class="operacion" (click)="sumar()">Sumar</button></mat-option>
+                        <mat-option value="two"><button class="operacion" (click)="restar()">Restar</button>
+                        </mat-option>
+                        <mat-option value="two"><button class="operacion" (click)="multiplicar()">Multiplicar</button>
+                        </mat-option>
+                        <mat-option value="two"><button class="operacion" (click)="dividir()">Dividir</button>
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="resultado-text">
+                <h1>{{resultado}}</h1>
+            </div>
+        </div>
+    </div>
+</div>
